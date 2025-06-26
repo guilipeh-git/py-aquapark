@@ -38,12 +38,13 @@ class SlideLimitationValidator(ABC):
     age = IntegerRange
     height = IntegerRange
     weight = IntegerRange
+
     def __init__(
             self,
             age: int,
             height: int,
             weight: int
-        ) -> None:
+    ) -> None:
         self.age = age
         self.height = height
         self.weight = weight
