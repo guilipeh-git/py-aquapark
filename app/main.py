@@ -24,7 +24,7 @@ class Visitor:
     age = IntegerRange
     height = IntegerRange
     weight = IntegerRange
-    
+
     def __init__(
         self,
         name: str,
