@@ -14,9 +14,10 @@ class IntegerRange:
 
     def __set__(self, instance: any, value: str) -> None:
         if not isinstance(value, int):
-            raise TypeError(None)
+            return ValueError
         if self.min_amount > value or value > self.max_amount:
-            raise TypeError(None)
+            raise TypeError
+
         setattr(instance, self.protect_name, value)
 
 
